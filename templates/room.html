@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Room {{roomName}}</title>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='roomName' content='{{roomName}}'>
+	<meta name='nickname' content='Miley'>
+	<link rel='stylesheet' type='text/css' href='/css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='/css/room.css'>
+	<script type='text/javascript' src='/js/jquery-1.11.0.js'></script>
+	<script type='text/javascript' src='/js/room.js'></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id='container_wrapper'>
+		<div id='container'>
+			<header id="head">
+				<h1 id="room">Room {{roomName}}</h1>
+			</header>
+			<ul id='messageBox'></ul>
+			<form id='chatForm' action='/{{roomName}}/messages' method='post'>
+				<input type='text' id='chatText' name='message' size='30' autocomplete='off' placeholder='Enter your message here...'/>
+				<button id='postMessageButton' type='submit'></button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

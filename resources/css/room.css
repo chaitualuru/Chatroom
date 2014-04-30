@@ -1,0 +1,152 @@
+body {
+	overflow: hidden;
+	font-family: "Lato", sans-serif;
+	background-color: rgb(20,57,86);
+}
+
+#transScreen {
+	z-index: 9999;
+	height: 100%;
+	color: black;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgb(242,203,140);
+}
+
+#roomIntro {
+	margin: 60px auto;
+	font-size: 40px;
+}
+
+#nameValue {
+	height: 60px;
+	width: 450px;
+	font-family: inherit;
+	font-size: 30px;
+}
+
+#nameContainer {
+	width: 600px;
+	margin: auto;
+	margin-top: 8em;
+	color: black;
+	text-align: center;
+}
+
+#namePicker {
+	margin-bottom: 30px;
+	font-size: 33px;
+	font-family: inherit;
+}
+
+#container_wrapper {
+	width: 640px;
+	left: 50%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+}
+
+#container {
+	position: relative;
+	width: 630px;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+	left: -50%;
+	display: none;
+	background-color: rgba(255,255,255,0.8);
+	-moz-box-shadow: inset 0 0 100px rgb(88,84,69);
+  	-webkit-box-shadow: inset 0 0 100px rgb(88,84,69);
+  	box-shadow: inset 0 0 100px rgb(88,84,69);
+	border-radius: 10px;
+}
+
+#head {
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	color: white;
+}
+
+#room {
+	font-size: 1.5em;
+	font-weight: 400;
+	position: absolute;
+	line-height: 80px;
+	left: 1em;
+	color: black;
+}
+
+#messageBox {
+	width: 100%;
+	position: absolute;
+	top: 70px;
+	bottom: 50px;
+	overflow: scroll;
+	font-family: inherit;
+}
+
+.body {
+	vertical-align: top;
+	width:auto;
+	padding: 10px;
+	display: inline-block;
+	text-align: left;
+	text-align: top;
+}
+
+.message {
+	width: 600px;
+	min-height: 40px;
+	text-align: left;
+	line-height: 1.2em;
+}
+
+.time {
+	float:right;
+	vertical-align: top;
+	width: auto;
+	padding: 10px;
+	display: inline-block;
+}
+
+.nickname {
+	min-width: 60px;
+	width:auto;
+	padding: 10px;
+	display: inline-block;
+	text-align: left;
+	color: rgb(20,57,86);
+}
+
+#chatForm {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	text-align: left;
+}
+
+
+input:focus {
+	outline:0;
+	border:0;
+}
+
+#chatText {
+	background-color: white;
+	height: 55px;
+	padding: 5px 40px 5px 20px;
+	font-size: 15px;
+	width: 569px;
+	font-family: inherit;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
